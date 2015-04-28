@@ -3,7 +3,6 @@ package Aplicacao.FabricaSwing;
 import Aplicacao.AbstractFactorys.FabricaDeFormas;
 import Aplicacao.AbstractFactorys.Formas.Elipse;
 import Aplicacao.AbstractFactorys.Formas.Retangulo;
-import Aplicacao.AbstractFactorys.Formas.Triangulo;
 
 /**
  *
@@ -12,18 +11,18 @@ import Aplicacao.AbstractFactorys.Formas.Triangulo;
 public class FabricaSwing implements FabricaDeFormas{
 
     @Override
-    public Triangulo criaTriangulo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public TrianguloSwing criaTriangulo() {
+        return new TrianguloSwing();
     }
 
     @Override
     public Elipse criaElipse() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new ElipseSwing();
     }
 
     @Override
     public Retangulo criaRetangulo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new RetanguloSwing();
     }
     
 }

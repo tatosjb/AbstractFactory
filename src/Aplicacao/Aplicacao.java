@@ -4,6 +4,7 @@ import Aplicacao.AbstractFactorys.FabricaDeFormas;
 import Aplicacao.AbstractFactorys.Formas.Elipse;
 import Aplicacao.AbstractFactorys.Formas.Retangulo;
 import Aplicacao.AbstractFactorys.Formas.Triangulo;
+import Aplicacao.FabricaSwing.FabricaSwing;
 
 /**
  *
@@ -14,7 +15,7 @@ public class Aplicacao {
 
 
     public static void main(String[] args) {
-        Aplicacao aplicacao = new Aplicacao(null);
+        Aplicacao aplicacao = new Aplicacao(new FabricaSwing());
         aplicacao.inicia();
     }
     
