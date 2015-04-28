@@ -15,7 +15,7 @@ public class Aplicacao {
 
 
     public static void main(String[] args) {
-        Aplicacao aplicacao = new Aplicacao(new FabricaSwing());
+        Aplicacao aplicacao = new Aplicacao(ConstrutorDeFabricaDeFormas.criaFabrica(false));
         aplicacao.inicia();
     }
     
